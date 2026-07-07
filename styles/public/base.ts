@@ -20,6 +20,13 @@
 import { css, cssCombine } from "@lutinglt/gitea-github-theme/core";
 
 const body = css`
+  :root {
+    --fonts-proportional: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Noto Sans CJK SC", "Noto Sans", "Segoe UI", "Microsoft YaHei", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --fonts-regular: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Noto Sans CJK SC", "Noto Sans", "Segoe UI", "Microsoft YaHei", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+  body, input, select, textarea, button, .ui.menu, .ui.button, .ui.label, .ui.input, h1, h2, h3, h4, h5, h6, .ui.header {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Noto Sans CJK SC", "Noto Sans", "Segoe UI", "Microsoft YaHei", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+  }
   body {
     line-height: 1.5;
   }
